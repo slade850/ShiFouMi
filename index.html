@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<htlm>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" /> <!-- pour ne pas avoir a zoomer sur petit ecran -->
+    <link rel="stylesheet" href="style.css" /> <!-- lien vers la feuille de style css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Chifoumi</title> <!-- titre de la page-->
+  </head>
+  <body>
+    <header>
+        <h1>ChiFouMi</h1><hr/>
+    </header>
+        <section id="choix">
+            <div>
+                <i class="far fa-hand-rock" id="pierre" onclick="recupUser(1)" ></i>
+            </div>
+            <div>
+                <i class="far fa-hand-paper" id="papier" onclick="recupUser(2)"></i>
+            </div>
+            <div>
+                <i class="far fa-hand-scissors" id="ciseaux" onclick="recupUser(3)"></i>
+            </div>
+        </section>
+        <section id="score">
+            <div id="player">
+                <h2 id="name"></h2>
+                <i id="playerChoice"></i>
+                <div><h3 id="pointP">0</h3></div>
+            </div>
+            <div id="ia" >
+                <h2>I.A</h2>
+                <i id="iaChoice"></i>
+                <div><h3 id="pointI">0</h3></div>
+            </div>
+        </section>
+        <footer>
+            <h2 id="resulta"></h2>
+        </footer>
+        <div class="container-modal">
+            <div class="modal">
+                <p id="text-modal"></p>
+                <button onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    <script src="./main.js"></script>
+  </body>
+</htlm>
