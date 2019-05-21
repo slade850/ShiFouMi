@@ -5,7 +5,7 @@ var plIa = document.getElementById('iaChoice');
 var x = 0;
 var pointA = 0;
 var pointB = 0;
-var speudo = prompt("Entre Ton Speudo.");
+var speudo = prompt("Entre Ton Pseudo.");
 document.getElementById("name").innerHTML = speudo;
 var modal = document.getElementsByClassName("container-modal")[0];
 
@@ -57,7 +57,7 @@ if(userInput == repIa) {
     pointB ++;
     document.getElementById("pointI").innerHTML = pointB;
 } else {
-    document.getElementById("resulta").innerHTML = 'Tu as Gagner';
+    document.getElementById("resulta").innerHTML = 'Tu as Gagné';
     document.getElementById("resulta").style.color = 'green';
     pointA ++;
     document.getElementById("pointP").innerHTML = pointA;
